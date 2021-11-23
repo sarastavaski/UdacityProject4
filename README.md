@@ -48,3 +48,19 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+---
+
+## Files In the Repo 
+* .circleci/config.yml: configures CircleCI 2.0
+* model_data: hosuing data for sklearn ML model
+* output_txt_files: terminal outputs for Udacity grading
+* Dockerfile: contains all commands to create an image
+* Makefile: sets up order of operations in project
+* app.py: Python flask app
+* make_prediction.sh: shell script to call in order to make a prediction
+* requirements.txt: list of rquired dependencies 
+* resize.sh: shell script to resize EBS Volume-- not required, but useful when a user runs out of space during testing
+* run_docker.sh: build docker image, lists docker images, and runs flask app
+* run_kubernetes.sh: set docker path, runs docker hub container with kubernetes, list kubernetes pods, forward the container port to a host
+* upload_docker.sh: create docker path, authenticate and tag, and push image to docker repo
