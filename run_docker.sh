@@ -10,6 +10,10 @@ docker build --tag=udacityproject4 .
 # List docker images
 docker image ls
 
+# Use docker image to lint dockerfile
+docker run --rm -i hadolint/hadolint < Dockerfile
+
 # Step 3: 
 # Run flask app
 docker run -p 8000:80 udacityproject4
+
