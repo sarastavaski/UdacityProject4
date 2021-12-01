@@ -15,6 +15,6 @@ docker run --rm -i hadolint/hadolint < Dockerfile
 
 # Step 3: 
 # Run flask app
-# publish the container’s port to a host port.
+# publish the container’s port to a host port
 docker run -p 8000:80 udacityproject4
 
